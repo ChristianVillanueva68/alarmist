@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alarmist</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" onsubmit="validateForm(event)">
+            <input type="text" id="firstname" placeholder="First Name" required>
+            <span id="firstnameError" class="error-message"></span>
+            
+            <input type="text" id="lastname" placeholder="Last Name" required>
+            <span id="lastnameError" class="error-message"></span>
+            
+            <input type="password" id="password" placeholder="Password" required>
+            <span id="passwordError1" class="error-message"></span>
+            
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <span id="confirmPasswordError" class="error-message"></span>
+            
+            <input type="email" id="email" placeholder="Email Address" required>
+            <span id="emailError" class="error-message"></span>
+            
+            <button type="submit">Register</button>
+            
+            <span id="registrationSuccess" class="success-message"></span>
+        </form>
+    </div>
+</body>
+</html>
